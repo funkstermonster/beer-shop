@@ -8,7 +8,6 @@ button {
   justify-content: center;
   align-items: center;
   padding: 8px 24px;
-  position: absolute;
   height: 40px;
   width: 148px;
   background: $greyscale-white;
@@ -20,4 +19,14 @@ button {
 
 button:hover {
   border: 2px solid $graduation-turquoise-dark;
+}
+
+button:focus {
+    border: 2px solid $accent-orange;
+}
+
+button:disabled {
+    border: 1px solid $greyscale-dark-grey;
+    color: $greyscale-dark-grey;
+    background: $greyscale-white;
 }

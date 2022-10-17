@@ -1,0 +1,37 @@
+@import "../../../../styles/typography/texts.scss";
+@import "../../../../styles/colors/colors.scss";
+
+button {
+  padding: 8px;
+  gap: 8px;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  color: $greyscale-black;
+}
+
+button:hover {
+    mask: url("../../../../assets/icons/compare.svg") no-repeat center;
+    width: 40px;
+    height: 40px;
+    background: $graduation-turquoise-dark;
+}
+
+button:focus {
+  border: 1px solid $accent-orange;
+}
+
+button:disabled {
+  mask: url("../../../../assets/icons/compare.svg") no-repeat center;
+  width: 40px;
+  height: 40px;
+  background-color: $greyscale-dark-grey;
+}
+
+.compare-icon {
+  mask: url("../../../../assets/icons/compare.svg") no-repeat center;
+  width: 40px;
+  height: 40px;
+  border: 1.5px solid $greyscale-black;
+  background: $greyscale-black;
+}

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-icon-only-button',
@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./icon-only-button.component.scss']
 })
 export class IconOnlyButtonComponent implements OnInit {
+  @Input() isDisabled: boolean = false;
 
   constructor() { }
 

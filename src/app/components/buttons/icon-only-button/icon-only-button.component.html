@@ -1,1 +1,3 @@
-<p>icon-only-button works!</p>
+<button [disabled]="isDisabled">
+    <div class="compare-icon" [ngClass]="{ disabled: isDisabled }"></div>
+</button>
