@@ -1,0 +1,27 @@
+@import "../../../styles/typography/texts.scss";
+@import "../../../styles/colors/colors.scss";
+
+input {
+  width: 24px;
+  height: 24px;
+  box-sizing: border-box;
+  background: $greyscale-white;
+  border: 1px solid $greyscale-dark-grey;
+  border-radius: 1px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+input:hover {
+  border: 1px solid $greyscale-black;
+}
+
+input:focus {
+  border: 1px solid $graduation-turquoise-dark;
+}
+
+input:focus {
+  border: 2px solid $accent-orange;
+}
+

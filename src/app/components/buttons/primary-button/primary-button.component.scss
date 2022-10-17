@@ -1,0 +1,49 @@
+@import "../../../../styles/typography/texts.scss";
+@import "../../../../styles/colors/colors.scss";
+
+button {
+  white-space: nowrap;
+  width: 152px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 24px;
+  gap: 8px;
+
+  background: $primary;
+  border-radius: 4px;
+
+  @include caption;
+  color: $greyscale-white;
+  font-weight: bold;
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+button:hover {
+  background: $graduation-turquoise-dark;
+}
+
+button:focus {
+  border: 1px solid $accent-orange;
+}
+
+button:disabled {
+  background: $greyscale-light-grey;
+  color: $greyscale-dark-grey;
+}
+
+.logo {
+    width: 24px;
+    height: 24px;
+    background-color: $greyscale-white;
+    mask: url('../../../../assets/icons/cart.svg') no-repeat center;
+}
+
+.disabled {
+    background-color: $greyscale-dark-grey
+}

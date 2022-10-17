@@ -1,0 +1,50 @@
+@import "../../../styles/typography/texts.scss";
+@import "../../../styles/colors/colors.scss";
+
+label {
+  width: 38px;
+  height: 24px;
+  font-family: "Lato";
+  @include standard-text;
+  color: $greyscale-black;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+input {
+  @include standard-text;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 16px;
+  width: 302px;
+  height: 40px;
+  font-family: "Lato";
+  background: $greyscale-white;
+  border: 1px solid $greyscale-dark-grey;
+  border-radius: 4px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+input:hover {
+  border: 1px solid $greyscale-black;
+}
+
+input:focus {
+  border: 2px solid $accent-orange;
+  border-radius: 4px;
+}
+
+input:disabled {
+  background: $greyscale-light-grey;
+  border: 1px solid $greyscale-dark-grey;
+}
+
+input:required {
+  background: $greyscale-white;
+  border: 1px solid $functional-warning-error;
+}

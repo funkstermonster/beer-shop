@@ -1,0 +1,23 @@
+@import "../../../../styles/typography/texts.scss";
+@import "../../../../styles/colors/colors.scss";
+
+button {
+  white-space: nowrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 24px;
+  position: absolute;
+  height: 40px;
+  width: 148px;
+  background: $greyscale-white;
+  border: 1px solid $graduation-turquoise-dark;
+  border-radius: 4px;
+  @include button-label;
+  color: $graduation-turquoise-dark;
+}
+
+button:hover {
+  border: 2px solid $graduation-turquoise-dark;
+}
