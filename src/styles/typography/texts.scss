@@ -1,0 +1,73 @@
+@mixin standard-text {
+  font-size: 16px;
+  line-height: 24px;
+  weight: 400;
+}
+
+@mixin semiBold-text {
+  font-size: 16px;
+  line-height: 24px;
+  weight: 600;
+}
+
+@mixin bold-text {
+  font-size: 16px;
+  line-height: 24px;
+  weight: 700;
+}
+
+@mixin uppercase-text {
+  font-size: 16px;
+  line-height: 24px;
+  weight: 400;
+  text-transform: uppercase;
+}
+
+@mixin standardLink-text {
+  font-size: 16px;
+  line-height: 24px;
+  weight: 400;
+}
+
+@mixin caption {
+  font-size: 14px;
+  line-height: 24px;
+  weight: 400;
+}
+
+@mixin caption-link {
+  font-size: 14px;
+  line-height: 24px;
+  weight: 400;
+}
+
+@mixin caption-bold {
+  font-size: 14px;
+  line-height: 24px;
+  weight: 700;
+}
+
+@mixin caption-uppercase-bold {
+  font-size: 14px;
+  line-height: 24px;
+  weight: 700;
+  text-transform: uppercase;
+}
+
+@mixin button-label {
+  font-size: 14px;
+  line-height: 24px;
+  weight: 700;
+}
+
+@mixin caption-small {
+  font-size: 12px;
+  line-height: 20px;
+  weight: 700;
+}
+
+@mixin caption-small-bold {
+  font-size: 12px;
+  line-height: 20px;
+  weight: 700;
+}
