@@ -1,0 +1,27 @@
+@import "../../../../styles/typography/texts.scss";
+@import "../../../../styles/colors/colors.scss";
+
+.container {
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 11px;
+width: 181.33px;
+height: 40px;
+left: 20px;
+top: 20px;
+
+}
+
+.pagination-wrapper {
+    border: 1px solid $greyscale-black;
+    border-radius: 1px;
+}
+
+.active {
+    width: 10px;
+    height: 10px;
+    background-color: $graduation-turquoise-dark;
+}
+
