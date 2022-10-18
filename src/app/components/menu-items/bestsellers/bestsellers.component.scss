@@ -1,0 +1,32 @@
+@import "../../../../styles/typography/texts.scss";
+@import "../../../../styles/colors/colors.scss";
+
+ul {
+  list-style-type: none;
+}
+
+li {
+font-family: 'Lato';
+@include caption-uppercase-bold;
+font-style: normal;
+width: 89px;
+height: 24px;
+color: $greyscale-black;
+box-sizing: border-box;
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+}
+
+li:hover {
+  color: $graduation-turquoise-dark;
+  border-bottom: 2px solid $graduation-turquoise-dark;
+}
+
+a:focus {
+  border: 2px solid $accent-orange;
+}
+
+li:active {
+  color: $greyscale-black;
+}
