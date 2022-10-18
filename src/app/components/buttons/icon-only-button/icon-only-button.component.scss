@@ -11,7 +11,7 @@ button {
 }
 
 button:hover {
-    mask: url("../../../../assets/icons/compare.svg") no-repeat center;
+    mask: url("../../../../assets/icons/24x24/compare.svg") no-repeat center;
     width: 40px;
     height: 40px;
     background: $graduation-turquoise-dark;
@@ -22,14 +22,14 @@ button:focus {
 }
 
 button:disabled {
-  mask: url("../../../../assets/icons/compare.svg") no-repeat center;
+  mask: url("../../../../assets/icons/24x24/compare.svg") no-repeat center;
   width: 40px;
   height: 40px;
   background-color: $greyscale-dark-grey;
 }
 
 .compare-icon {
-  mask: url("../../../../assets/icons/compare.svg") no-repeat center;
+  mask: url("../../../../assets/icons/24x24/compare.svg") no-repeat center;
   width: 40px;
   height: 40px;
   border: 1.5px solid $greyscale-black;
