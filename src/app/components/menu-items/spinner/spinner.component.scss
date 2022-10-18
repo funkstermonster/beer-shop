@@ -1,0 +1,51 @@
+@import "../../../../styles/typography/texts.scss";
+@import "../../../../styles/colors/colors.scss";
+
+.container {
+  width: 242px;
+  height: 40px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid $greyscale-dark-grey;
+  border-radius: 5px;
+  font-family: 'Lato';
+}
+
+div.minus-container {
+  height: 100%;
+  border-right: 1px solid $greyscale-dark-grey;
+  display: flex;
+  align-items: center;
+}
+
+.minus {
+  mask: url("../../../../assets/icons/24x24/minus.svg") no-repeat center;
+  width: 24px;
+  height: 24px;
+  background-color: $greyscale-black;
+  cursor: pointer;
+
+}
+.minus:hover {
+  background-color: $graduation-turquoise-dark;
+}
+
+div.minus-container:focus {
+  border: 1.5px solid $accent-orange;
+}
+
+.plus {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 8px;
+  border-left: 1px solid $greyscale-dark-grey;
+  height: 100%;
+}
+
+.plus:hover {
+  color: $graduation-turquoise-dark;
+}
