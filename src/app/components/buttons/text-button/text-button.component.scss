@@ -1,0 +1,28 @@
+@import "../../../../styles/typography/texts.scss";
+@import "../../../../styles/colors/colors.scss";
+
+button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 148px;
+  height: 40px;
+  background: $greyscale-white;
+  border-radius: 4px;
+  @include button-label;
+  color: $graduation-turquoise-dark;
+}
+
+button:hover {
+  background-color: $graduation-turquoise-light;
+}
+
+button:focus {
+  border: 2px solid $accent-orange;
+}
+
+button:disabled {
+  background: $greyscale-light-grey;
+  color: $greyscale-dark-grey;
+}

@@ -6,9 +6,9 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./input.component.scss']
 })
 export class InputComponent implements OnInit {
-  @Input() isDisabled: boolean = true;
+  @Input() isDisabled: boolean = false;
   @Input() inputText: string = "Placeholder Text"
-  @Input() input?: string;
+
 
   constructor() { }
 

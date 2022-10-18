@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-text-button',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./text-button.component.scss']
 })
 export class TextButtonComponent implements OnInit {
+  @Input() isDisabled: boolean = false;
+  @Input() text: string = "Reset to default"
 
   constructor() { }
 
