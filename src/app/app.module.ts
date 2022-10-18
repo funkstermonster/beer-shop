@@ -15,7 +15,11 @@ import { MyAccountComponent } from './components/menu-items/my-account/my-accoun
 import { SpinnerComponent } from './components/menu-items/spinner/spinner.component';
 import { PagingComponent } from './components/menu-items/paging/paging.component';
 import { ProductCardComponent } from './components/product-card/product-card.component';
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
+import { SaleComponent } from './components/badges/sale/sale.component';
+import { SoldOutComponent } from './components/badges/sold-out/sold-out.component';
+import { NewComponent } from './components/badges/new/new.component';
+import { ProductOfTheWeekComponent } from './components/badges/product-of-the-week/product-of-the-week.component'
 
 @NgModule({
   declarations: [
@@ -31,6 +35,10 @@ import { HttpClientModule } from '@angular/common/http'
     SpinnerComponent,
     PagingComponent,
     ProductCardComponent,
+    SaleComponent,
+    SoldOutComponent,
+    NewComponent,
+    ProductOfTheWeekComponent,
     ],
   imports: [
     BrowserModule,

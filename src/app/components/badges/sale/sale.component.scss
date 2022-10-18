@@ -1,0 +1,25 @@
+@import "../../../../styles/typography/texts.scss";
+@import "../../../../styles/colors/colors.scss";
+
+.sale {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 1px 11px;
+  gap: 10px;
+
+  width: 45px;
+  height: 25px;
+  left: 20px;
+  top: 20px;
+  background-color: $accent-violet;
+  border-radius: 4px;
+}
+
+.text {
+  @include caption-small-bold;
+  display: flex;
+  align-items: center;
+  color: $greyscale-white;
+  font-family: 'Lato';
+}
