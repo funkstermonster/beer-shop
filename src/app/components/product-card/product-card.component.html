@@ -1,0 +1,36 @@
+<div class="container">
+  <div class="product-card">
+    <div class="badge-container">
+      <span class="sale" *ngIf="isOnSale">Sale</span>
+      <span class="product-of-the-week" *ngIf="isProductOfTheWeek">Product of the week</span>
+      <span class="new" *ngIf="isNew">New</span>
+      <span class="soldout" *ngIf="isSoldOut">Sold Out</span>
+    </div>
+    <img
+      src="{{beer.image_url}}"
+      alt=""
+    />
+    <div class="description-container">
+      <span>{{beer.tagline}}</span>
+      <strong>{{beer.name}}</strong>
+      <span>{{beer.contributed_by}}</span>
+    </div>
+    <div class="price-container">
+      <div class="price-container-left">
+        <strong>€{{generateRandomNumber() | number: '1.2-2'}}</strong>
+        <span>€{{generateRandomNumber() | number: '1.2-2'}}</span>
+      </div>
+      <div class="price-container-right">
+        <span>50% OFF</span>
+      </div>
+    </div>
+    <div class="content-container">
+      <span>Content</span>
+      <span>{{generateVolumeNumber() | number: '1.2-2'}} Liter</span>
+    </div>
+    <div class="cta-container">
+      <input type="number" />
+      <app-primary-button></app-primary-button>
+    </div>
+  </div>
+</div>

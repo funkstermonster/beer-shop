@@ -7,4 +7,7 @@
 <app-bestsellers></app-bestsellers><br>
 <app-my-account></app-my-account><br>
 <app-spinner></app-spinner><br>
-<app-paging></app-paging>
+<app-paging></app-paging><hr>
+<ng-container *ngFor="let beer of beers">
+    <app-product-card [beer]="beer"></app-product-card>
+</ng-container>

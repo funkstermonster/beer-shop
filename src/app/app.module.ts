@@ -14,6 +14,8 @@ import { BestsellersComponent } from './components/menu-items/bestsellers/bestse
 import { MyAccountComponent } from './components/menu-items/my-account/my-account.component';
 import { SpinnerComponent } from './components/menu-items/spinner/spinner.component';
 import { PagingComponent } from './components/menu-items/paging/paging.component';
+import { ProductCardComponent } from './components/product-card/product-card.component';
+import { HttpClientModule } from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -28,12 +30,14 @@ import { PagingComponent } from './components/menu-items/paging/paging.component
     MyAccountComponent,
     SpinnerComponent,
     PagingComponent,
+    ProductCardComponent,
     ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
 
   ],
   providers: [],
