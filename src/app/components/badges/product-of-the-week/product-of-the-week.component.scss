@@ -1,0 +1,21 @@
+@import "../../../../styles/typography/texts.scss";
+@import "../../../../styles/colors/colors.scss";
+
+.product-of-the-week {
+  display: flex;
+  flex-direction: row;
+  padding: 1px 11px;
+  background-color: $greyscale-white;
+  border-radius: 4px;
+  width: 131px;
+  height: 25px;
+  border: 1px solid $greyscale-black;
+}
+
+.text {
+  @include caption-small-bold;
+  display: flex;
+  align-items: center;
+  color: $greyscale-black;
+  font-family: "Lato";
+}
