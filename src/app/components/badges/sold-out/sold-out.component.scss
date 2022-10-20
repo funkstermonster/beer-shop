@@ -1,0 +1,18 @@
+@import "../../../../styles/typography/texts.scss";
+@import "../../../../styles/colors/colors.scss";
+
+.soldOut {
+  height: 25px;
+  width: 66px;
+  display: flex;
+  flex-direction: row;
+  padding: 1px 11px;
+  background-color: $accent-orange;
+  border-radius: 4px;
+}
+
+.text {
+  @include caption-small-bold;
+  font-family: "Lato";
+  color: $greyscale-white;
+}
