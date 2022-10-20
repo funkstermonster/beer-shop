@@ -19,7 +19,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { SaleComponent } from './components/badges/sale/sale.component';
 import { SoldOutComponent } from './components/badges/sold-out/sold-out.component';
 import { NewComponent } from './components/badges/new/new.component';
-import { ProductOfTheWeekComponent } from './components/badges/product-of-the-week/product-of-the-week.component'
+import { ProductOfTheWeekComponent } from './components/badges/product-of-the-week/product-of-the-week.component';
+import { FilterTagComponent } from './components/tag/filter-tag/filter-tag.component'
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { ProductOfTheWeekComponent } from './components/badges/product-of-the-we
     SoldOutComponent,
     NewComponent,
     ProductOfTheWeekComponent,
+    FilterTagComponent,
     ],
   imports: [
     BrowserModule,
