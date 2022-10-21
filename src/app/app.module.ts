@@ -21,6 +21,7 @@ import { SoldOutComponent } from './components/badges/sold-out/sold-out.componen
 import { NewComponent } from './components/badges/new/new.component';
 import { ProductOfTheWeekComponent } from './components/badges/product-of-the-week/product-of-the-week.component';
 import { FilterTagComponent } from './components/tag/filter-tag/filter-tag.component';
+import { SearchBarComponent } from './components/search-bar/search-bar.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,6 +41,7 @@ import { FilterTagComponent } from './components/tag/filter-tag/filter-tag.compo
     NewComponent,
     ProductOfTheWeekComponent,
     FilterTagComponent,
+    SearchBarComponent,
     ],
   imports: [
     BrowserModule,
