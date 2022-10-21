@@ -24,8 +24,11 @@ import { FilterTagComponent } from './components/tag/filter-tag/filter-tag.compo
 import { SearchBarComponent } from './components/search-bar/search-bar.component';
 import { HeaderComponent } from './pages/main-page/header/header.component';
 import { BeerFilterComponent } from './pages/main-page/beer-filter/beer-filter.component';
-import { BeerDisplayComponent } from './pages/main-page/beer-display/beer-display.component';
-import { ProductListComponent } from './components/product-list/product-list.component';
+
+import { ProductListComponent } from './pages/main-page/product-list/product-list.component';
+import { WishlistComponent } from './components/menu-items/wishlist/wishlist.component';
+import { CompareComponent } from './components/menu-items/compare/compare.component';
+import { CartComponent } from './components/menu-items/cart/cart.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -48,8 +51,10 @@ import { ProductListComponent } from './components/product-list/product-list.com
     SearchBarComponent,
     HeaderComponent,
     BeerFilterComponent,
-    BeerDisplayComponent,
     ProductListComponent,
+    WishlistComponent,
+    CompareComponent,
+    CartComponent,
     ],
   imports: [
     BrowserModule,

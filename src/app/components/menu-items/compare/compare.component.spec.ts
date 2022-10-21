@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { BeerDisplayComponent } from './beer-display.component';
+import { CompareComponent } from './compare.component';
 
-describe('BeerDisplayComponent', () => {
-  let component: BeerDisplayComponent;
-  let fixture: ComponentFixture<BeerDisplayComponent>;
+describe('CompareComponent', () => {
+  let component: CompareComponent;
+  let fixture: ComponentFixture<CompareComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ BeerDisplayComponent ]
+      declarations: [ CompareComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(BeerDisplayComponent);
+    fixture = TestBed.createComponent(CompareComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
