@@ -1,0 +1,27 @@
+@import "../../../../styles/typography/texts.scss";
+@import "../../../../styles/colors/colors.scss";
+
+
+.text {
+    @include uppercase-text;
+}
+
+.beer-styles {
+    @include bold-text;
+}
+
+.img-arrow-up {
+    float: right;
+}
+
+.method {
+    @include bold-text;
+}
+
+.spec-prods {
+    @include bold-text;
+}
+
+.alcohol-range {
+    @include bold-text;
+}

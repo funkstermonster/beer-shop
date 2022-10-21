@@ -13,6 +13,11 @@ input {
   flex-grow: 0;
 }
 
+.text {
+  @include uppercase-text;
+  font-family: 'Lato';
+}
+
 input:hover {
   border: 1px solid $greyscale-black;
 }

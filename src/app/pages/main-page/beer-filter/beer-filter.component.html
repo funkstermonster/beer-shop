@@ -1,1 +1,54 @@
-<p>beer-filter works!</p>
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <img src="../../../../assets/icons/24x24/filter.svg" alt="filter icon" width="24px"><a class="text">filter by</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-10">
+            <span class="beer-styles mt-2">Beer Styles</span>
+        </div>
+        <div class="col-2 text-right d-flex align-items-center">
+            <img src="../../../../assets/icons/16x16/arrow up.svg" alt="arrow up" class="img-arrow-up">
+        </div>
+    </div>
+    <div class="row">
+        <app-checkbox [text]="'ipa'"></app-checkbox>
+        <app-checkbox [text]="'porter & staut'"></app-checkbox>
+        <app-checkbox [text]="'lager & helles'"></app-checkbox>
+        <app-checkbox [text]="'sour ale & wild ale'"></app-checkbox>
+        <app-checkbox [text]="'pale ale'"></app-checkbox>
+    </div>
+    <div class="row">
+        <div class="col-10">
+            <span class="method mt-2">Method</span>
+        </div>
+        <div class="col-2 text-right d-flex align-items-center">
+            <img src="../../../../assets/icons/16x16/arrow up.svg" alt="arrow up" class="img-arrow-up">
+        </div>
+    </div>
+    <div class="row">
+        <app-checkbox [text]="'mash temp'"></app-checkbox>
+        <app-checkbox [text]="'fermentation'"></app-checkbox>
+        <app-checkbox [text]="'twist'"></app-checkbox>
+    </div>
+    <div class="row">
+        <div class="col-10">
+            <span class="spec-prods mt-2">Special products</span>
+        </div>
+        <div class="col-2 text-right d-flex align-items-center">
+            <img src="../../../../assets/icons/16x16/arrow up.svg" alt="arrow up" class="img-arrow-up">
+        </div>
+    </div>
+    <div class="row">
+        <app-checkbox [text]="'offers'"></app-checkbox>
+    </div>
+    <div class="row">
+        <div class="col-10">
+            <span class="alcohol-range mt-2">Alcohol range</span>
+        </div>
+        <div class="col-2 text-right d-flex align-items-center">
+            <img src="../../../../assets/icons/16x16/arrow up.svg" alt="arrow up" class="img-arrow-up">
+        </div>
+    </div>
+</div>
