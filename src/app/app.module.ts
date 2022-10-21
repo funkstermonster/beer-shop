@@ -20,8 +20,7 @@ import { SaleComponent } from './components/badges/sale/sale.component';
 import { SoldOutComponent } from './components/badges/sold-out/sold-out.component';
 import { NewComponent } from './components/badges/new/new.component';
 import { ProductOfTheWeekComponent } from './components/badges/product-of-the-week/product-of-the-week.component';
-import { FilterTagComponent } from './components/tag/filter-tag/filter-tag.component'
-
+import { FilterTagComponent } from './components/tag/filter-tag/filter-tag.component';
 @NgModule({
   declarations: [
     AppComponent,
