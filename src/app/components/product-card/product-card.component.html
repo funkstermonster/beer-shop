@@ -18,9 +18,9 @@
     <div class="price-container">
       <div class="price-container-left">
         <strong>€{{generateRandomNumber() | number: '1.2-2'}}</strong>
-        <span>€{{generateRandomNumber() | number: '1.2-2'}}</span>
+        <span *ngIf="isOnSale">€{{generateRandomNumber() | number: '1.2-2'}}</span>
       </div>
-      <div class="price-container-right">
+      <div class="price-container-right" *ngIf="isOnSale">
         <span>50% OFF</span>
       </div>
     </div>
@@ -28,9 +28,13 @@
       <span>Content</span>
       <span>{{generateVolumeNumber() | number: '1.2-2'}} Liter</span>
     </div>
-    <div class="cta-container">
-      <input type="number" />
-      <app-primary-button></app-primary-button>
+    <div class="row">
+      <div class="col-2">
+        <input type="number" class="quantity" />
+      </div>
+      <div class="col-10">
+        <app-primary-button [isDisabled]="isSoldOut"></app-primary-button>
+      </div>
     </div>
   </div>
 </div>

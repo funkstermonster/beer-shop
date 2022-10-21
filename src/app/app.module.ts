@@ -22,6 +22,10 @@ import { NewComponent } from './components/badges/new/new.component';
 import { ProductOfTheWeekComponent } from './components/badges/product-of-the-week/product-of-the-week.component';
 import { FilterTagComponent } from './components/tag/filter-tag/filter-tag.component';
 import { SearchBarComponent } from './components/search-bar/search-bar.component';
+import { HeaderComponent } from './pages/main-page/header/header.component';
+import { BeerFilterComponent } from './pages/main-page/beer-filter/beer-filter.component';
+import { BeerDisplayComponent } from './pages/main-page/beer-display/beer-display.component';
+import { ProductListComponent } from './components/product-list/product-list.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,6 +46,10 @@ import { SearchBarComponent } from './components/search-bar/search-bar.component
     ProductOfTheWeekComponent,
     FilterTagComponent,
     SearchBarComponent,
+    HeaderComponent,
+    BeerFilterComponent,
+    BeerDisplayComponent,
+    ProductListComponent,
     ],
   imports: [
     BrowserModule,
