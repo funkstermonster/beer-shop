@@ -9,10 +9,11 @@
     <img
       src="{{beer.image_url}}"
       alt=""
+      [routerLink]="['/pdp/', beer.id]"
     />
     <div class="description-container">
       <span>{{beer.tagline}}</span>
-      <strong>{{beer.name}}</strong>
+      <strong [routerLink]="['/pdp/', beer.id]">{{beer.name}}</strong>
       <span>{{beer.contributed_by}}</span>
     </div>
     <div class="price-container">

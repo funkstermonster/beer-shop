@@ -29,6 +29,7 @@ import { ProductListComponent } from './pages/main-page/product-list/product-lis
 import { WishlistComponent } from './components/menu-items/wishlist/wishlist.component';
 import { CompareComponent } from './components/menu-items/compare/compare.component';
 import { CartComponent } from './components/menu-items/cart/cart.component';
+import { ProductDetailsComponent } from './pages/product-details/product-details.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -55,6 +56,7 @@ import { CartComponent } from './components/menu-items/cart/cart.component';
     WishlistComponent,
     CompareComponent,
     CartComponent,
+    ProductDetailsComponent,
     ],
   imports: [
     BrowserModule,

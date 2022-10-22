@@ -13,4 +13,8 @@ export class BeerService {
     getBeers(): Observable<Beer[]> {
         return this.http.get<Beer[]>(API_URL)
     }
+
+    getBeerDetails(beerId: number): Observable<Beer[]> {
+        return this.http.get<Beer[]>(API_URL + beerId)
+    }
 }

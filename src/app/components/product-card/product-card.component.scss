@@ -56,6 +56,7 @@ img {
     margin-top: 16px;
     margin-bottom: 16px;
     object-fit: contain;
+    cursor: pointer;
 }
 
 div.price-container span {
@@ -75,6 +76,14 @@ div.description-container {
     text-overflow: ellipsis;
     span {
         display: block;
+    }
+
+    strong {
+        cursor: pointer;
+    }
+
+    strong:hover {
+        border: 1px solid grey;
     }
 }
 
