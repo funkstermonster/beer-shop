@@ -61,7 +61,7 @@ import { CartComponent } from './components/menu-items/cart/cart.component';
     AppRoutingModule,
     ReactiveFormsModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
 
   ],
   providers: [],

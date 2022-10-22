@@ -1,15 +1,30 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { SearchService } from 'src/app/service/search.service';
 
 @Component({
   selector: 'app-search-bar',
   templateUrl: './search-bar.component.html',
   styleUrls: ['./search-bar.component.scss']
 })
-export class SearchBarComponent implements OnInit {
+export class SearchBarComponent {
 
-  constructor() { }
+  searchQuery: string = ""
+  @Output() searchQueryEmitter: EventEmitter<string> = new EventEmitter()
 
-  ngOnInit(): void {
+  constructor(
+    private searchService: SearchService
+  ) { }
+
+  emitSearchQuery() {
+    this.searchQueryEmitter.emit(this.searchQuery)
+  }
+
+  valueChange(event: any) {
+    this.searchQuery = event.target.value
+  }
+
+  onSubmit() {
+    this.searchService.updateData(this.searchQuery);
   }
 
 }

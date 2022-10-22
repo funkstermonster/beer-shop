@@ -1,5 +1,11 @@
 <div class="search-container">
-  <input type="search-bar" placeholder="Search for a beer..." />
+  <form (submit)="onSubmit()">
+    <input
+      type="text"
+      placeholder="Search for a beer..."
+      (keypress)="valueChange($event)"
+    />
+  </form>
   <div class="serach-icon-container">
     <div class="search-icon"></div>
   </div>
