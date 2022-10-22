@@ -10,7 +10,7 @@ import { StorageService } from 'src/app/service/storage.service';
 export class CustomersAlsoBoughtComponent implements OnInit {
 
   viewedBeers: Beer[] = []
-
+  
   constructor(
     private storageService: StorageService
   ) { }

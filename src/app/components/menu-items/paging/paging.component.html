@@ -2,11 +2,7 @@
     <div class="pagination-wrapper">
       <div class="pagination">
         <div class="arrow-left" (click)="prevPage()"></div>
-        <span class="active"></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
+        <span class="dot" *ngFor="let dot of getNumberOfPages()"></span>
         <div class="arrow-right" (click)="nextPage()"></div>
       </div>
     </div>
