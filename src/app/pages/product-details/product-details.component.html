@@ -1,4 +1,4 @@
-<div class="container-fluid" *ngIf="beer">
+<div class="container-fluid" *ngIf="beer[0]">
     <div class="row">
         <div class="col-4">
             <img src="{{beer[0].image_url}}" width="200px" alt="">
@@ -6,15 +6,15 @@
         <div class="col-4">
             <h1>{{beer[0].name}}</h1>
             <h2>{{beer[0].tagline}}</h2>
-            <p>{{beer[0].description}}</p>
-            <strong>€{{this.generatePrice() | number: '1.2-2'}}</strong>
+            <p class="description">{{beer[0].description}}</p>
+            <strong>€{{beer[0].price | number: '1.2-2'}}</strong>
             <p>Plus shipping costs</p>
         </div>
         <div class="col-4">
             <div class="checkout-container">
                 <strong>Delivery time appr. 3-7 days</strong>
                 <h3>Total</h3>
-                <strong>€{{this.generatePrice() | number: '1.2-2'}}</strong><br>
+                <strong>€{{beer[0].price | number: '1.2-2'}}</strong><br>
                 <span>Prices incl. VAT plus shipping costs</span>
                 <app-spinner></app-spinner>
                 <app-primary-button></app-primary-button>
@@ -75,6 +75,12 @@
                     <p>{{beer[0].srm}} - {{beer[0].ebc}}</p>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <app-customers-also-bought></app-customers-also-bought>
         </div>
     </div>
 </div>

@@ -8,8 +8,9 @@ import { Beer } from 'src/app/model/beer';
 })
 export class ProductCardComponent {
 
-  @Input() beer!: Beer
+  @Input() beer?: Beer
 
   constructor() { }
+
 
 }

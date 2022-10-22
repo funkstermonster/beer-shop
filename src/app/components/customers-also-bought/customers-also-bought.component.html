@@ -1,0 +1,13 @@
+<div class="container-fluid" *ngIf="shouldDisplay()">
+    <div class="row">
+        <div class="col-12">
+            <h1>Customers also bought</h1>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-4" *ngFor="let beer of viewedBeers">
+            <app-product-card [beer]="beer"></app-product-card>
+        </div>
+    </div>
+</div>

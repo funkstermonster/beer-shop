@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Beer } from 'src/app/model/beer';
 import { BeerService } from 'src/app/service/beer.service';
+import { StorageService } from 'src/app/service/storage.service';
 
 @Component({
   selector: 'app-product-details',
@@ -16,7 +17,8 @@ export class ProductDetailsComponent implements OnInit {
 
   constructor(
     private activatedRoute: ActivatedRoute,
-    private beerService: BeerService
+    private beerService: BeerService,
+    private storageService: StorageService
   ) { }
 
   ngOnInit(): void {
@@ -24,6 +26,10 @@ export class ProductDetailsComponent implements OnInit {
       this.beerId = data["id"]
       this.beerService.getBeerDetails(this.beerId).subscribe(data => {
         this.beer = data
+        this.beer[0].price = this.generatePrice()
+        this.beer[0].oldPrice = this.generatePrice()
+        this.beer[0].volume = this.generatePrice()
+        this.storageService.addBeer(this.beer[0])
         this.isLoading = false
       })
     })
