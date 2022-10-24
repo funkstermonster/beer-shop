@@ -26,12 +26,13 @@ import { HeaderComponent } from './pages/main-page/header/header.component';
 import { BeerFilterComponent } from './pages/main-page/beer-filter/beer-filter.component';
 
 import { ProductListComponent } from './pages/main-page/product-list/product-list.component';
-import { WishlistComponent } from './components/menu-items/wishlist/wishlist.component';
+import { WishlistLogoComponent } from './components/menu-items/wishlist-logo/wishlist-logo.component';
 import { CompareComponent } from './components/menu-items/compare/compare.component';
 import { CartComponent } from './components/menu-items/cart/cart.component';
 import { ProductDetailsComponent } from './pages/product-details/product-details.component';
 import { CustomersAlsoBoughtComponent } from './components/customers-also-bought/customers-also-bought.component';
 import { InfiniteScrollModule } from "ngx-infinite-scroll";
+import { WishlistComponent } from './pages/wishlist/wishlist.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -55,11 +56,12 @@ import { InfiniteScrollModule } from "ngx-infinite-scroll";
     HeaderComponent,
     BeerFilterComponent,
     ProductListComponent,
-    WishlistComponent,
+    WishlistLogoComponent,
     CompareComponent,
     CartComponent,
     ProductDetailsComponent,
     CustomersAlsoBoughtComponent,
+    WishlistComponent
     ],
   imports: [
     BrowserModule,

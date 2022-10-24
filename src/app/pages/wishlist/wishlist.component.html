@@ -1,0 +1,8 @@
+<div class="container">
+    <div class="row">
+        <p>Wishlist</p>
+        <div class="col-4" *ngFor="let beer of wishedBeers">
+            <app-product-card [beer]="beer"></app-product-card>
+        </div>
+    </div>
+</div>
