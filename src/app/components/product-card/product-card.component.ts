@@ -1,5 +1,6 @@
 import { AfterViewInit, Component, Input, OnInit } from '@angular/core';
 import { Beer } from 'src/app/model/beer';
+import { ShoppingCartService } from 'src/app/service/shopping-cart.service';
 import { WishlistService } from 'src/app/service/wishlist.service';
 
 @Component({
@@ -9,8 +10,8 @@ import { WishlistService } from 'src/app/service/wishlist.service';
 })
 export class ProductCardComponent implements OnInit {
 
-  @Input() beer?: Beer
-  constructor(private wishlistService: WishlistService) { }
+  @Input() beer?: Beer;
+  constructor(private wishlistService: WishlistService, private shoppingCartService: ShoppingCartService) { }
 
   ngOnInit(): void { 
   }
@@ -20,6 +21,12 @@ export class ProductCardComponent implements OnInit {
      this.wishlistService.addBeerIntoWishlist(this.beer);
     }
   }
+  addToCart() {
+    if(this.beer)
+    this.shoppingCartService.addBeerIntoCart(this.beer);
+  }
+
+
 
 
 }

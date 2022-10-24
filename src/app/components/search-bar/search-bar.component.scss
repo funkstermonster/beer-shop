@@ -4,10 +4,17 @@
 .search-container {
     height: 40px;
     width: 520px;
-    display: flex;
     border: 1px solid $greyscale-dark-grey;
     border-radius: 4px;
 
+}
+
+img {
+    position: relative;
+    top: -17px;
+    float: right;
+    right: 20px;
+    background-color: $primary;
 }
 
 .search-container:hover {

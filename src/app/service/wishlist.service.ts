@@ -14,8 +14,6 @@ export class WishlistService {
   data = this.wishlishtCounterSource.asObservable();
   
   constructor() {
-    console.log(this.favBeers.length)
-    console.log(this.getLovedBeers().length);
     this.favBeers = this.getLovedBeers()
   }
 

@@ -33,6 +33,7 @@ import { ProductDetailsComponent } from './pages/product-details/product-details
 import { CustomersAlsoBoughtComponent } from './components/customers-also-bought/customers-also-bought.component';
 import { InfiniteScrollModule } from "ngx-infinite-scroll";
 import { WishlistComponent } from './pages/wishlist/wishlist.component';
+import { ShoppingCartComponent } from './pages/shopping-cart/shopping-cart.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -61,7 +62,8 @@ import { WishlistComponent } from './pages/wishlist/wishlist.component';
     CartComponent,
     ProductDetailsComponent,
     CustomersAlsoBoughtComponent,
-    WishlistComponent
+    WishlistComponent,
+    ShoppingCartComponent
     ],
   imports: [
     BrowserModule,

@@ -36,7 +36,7 @@
         <input type="number" class="quantity" />
       </div>
       <div class="col-10">
-        <app-primary-button [isDisabled]="beer.isSoldOut"></app-primary-button>
+        <app-primary-button [isDisabled]="beer.isSoldOut" (click)="addToCart()"></app-primary-button>
       </div>
     </div>
   </div>

@@ -1,12 +1,16 @@
-<div class="search-container">
-  <form (submit)="onSubmit()">
-    <input
-      type="text"
-      placeholder="Search for a beer..."
-      (keypress)="valueChange($event)"
-    />
-  </form>
-  <div class="serach-icon-container">
-    <div class="search-icon"></div>
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <div class="search-container">
+        <form (submit)="onSubmit()">
+          <input
+            type="text"
+            placeholder="Search for a beer..."
+            (keypress)="valueChange($event)"
+          />
+        </form>
+        <img src="../../../assets/icons/24x24/search.svg" alt="" (click)="onSubmit()">
+      </div>
+    </div>
   </div>
 </div>

@@ -1,0 +1,72 @@
+<div class="container">
+  <div class="row">
+    <h5>Shopping Cart</h5>
+  </div>
+  <div class="row">
+    <div class="col-8">
+      <table class="table-responsive">
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Contributor</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let beer of uniqueBeers()">
+            <div class="beercard-container">
+              <td>{{ beer.name }}</td>
+              <img src="{{ beer.image_url }}" alt="" />
+            </div>
+            <td>{{ beer.contributed_by }}</td>
+            <td>€{{ beer.price | number: "1.2-2" }}</td>
+            <td class="spinner"><app-spinner [number]="getQuantity(beer)" (changedQuantityEmitter)="reactToQuantityChange($event, beer)"></app-spinner></td>
+            <td>{{getQuantity(beer) * beer.price | number: "1.2-2"}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-4">
+      <div class="summary">
+        <h6>Summary</h6>
+        <p>Free shipping from €500</p>
+        <hr>
+        <div class="row">
+          <div class="col-8">
+            Items:
+          </div>
+          <div class="col-4">
+            €{{calculateItemsPrice() | number: "1.2-2"}}
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-8">
+            VAT:
+          </div>
+          <div class="col-4">
+            €{{vat}}
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-8">
+            Shipping:
+          </div>
+          <div class="col-4">
+            €{{shipping}}
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-8">
+            <span>ORDER TOTAL</span>
+          </div>
+          <div class="col-4">
+            €{{calculateItemsPrice()+vat+shipping | number: "1.2-2"}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
