@@ -31,6 +31,7 @@ import { CompareComponent } from './components/menu-items/compare/compare.compon
 import { CartComponent } from './components/menu-items/cart/cart.component';
 import { ProductDetailsComponent } from './pages/product-details/product-details.component';
 import { CustomersAlsoBoughtComponent } from './components/customers-also-bought/customers-also-bought.component';
+import { InfiniteScrollModule } from "ngx-infinite-scroll";
 @NgModule({
   declarations: [
     AppComponent,
@@ -66,6 +67,7 @@ import { CustomersAlsoBoughtComponent } from './components/customers-also-bought
     ReactiveFormsModule,
     FormsModule,
     HttpClientModule,
+    InfiniteScrollModule
 
   ],
   providers: [],

@@ -1,7 +1,15 @@
-<div class="container">
-    <div class="row">
-        <div class="col-4" *ngFor="let beer of beers">
-            <app-product-card [beer]="beer"></app-product-card>
-        </div>
+<div
+  class="container"
+  class="search-results"
+  infiniteScroll
+  [infiniteScrollDistance]="1"
+  [infiniteScrollUpDistance]="2"
+  [infiniteScrollThrottle]="150"
+  (scrolled)="onScrollDown()"
+>
+  <div class="row">
+    <div class="col-4" *ngFor="let beer of beers">
+      <app-product-card [beer]="beer"></app-product-card>
     </div>
+  </div>
 </div>

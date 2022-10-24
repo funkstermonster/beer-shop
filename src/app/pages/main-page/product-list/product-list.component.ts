@@ -17,6 +17,8 @@ export class ProductListComponent implements OnInit {
   isNew: boolean = false;
   isProductOfTheWeek = false;
   numberOfBadges = 0;
+  currentPage = 1;
+
   public searchObservable$: BehaviorSubject<string> =
     new BehaviorSubject<string>('');
 
@@ -26,7 +28,7 @@ export class ProductListComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.beerService.getBeers().subscribe((data) => {
+    this.beerService.getBeers(this.currentPage).subscribe((data) => {
       this.beers = data;
       this.beers.forEach((currentBeer) => {
         currentBeer.price = this.generatePrice();
@@ -45,6 +47,27 @@ export class ProductListComponent implements OnInit {
     });
 
     this.subscribeToSearch();
+  }
+
+  nextPage(): void {
+    this.currentPage++
+    this.beerService.getBeers(this.currentPage).subscribe((data) => {
+      data.forEach((currentBeer) => {
+        currentBeer.price = this.generatePrice();
+        currentBeer.volume = this.generateVolumeNumber();
+        this.clearBadges();
+        this.generateBadges();
+        currentBeer.isNew = this.isNew;
+        currentBeer.isOnSale = this.isOnSale;
+        currentBeer.isProductOfTheWeek = this.isProductOfTheWeek;
+        currentBeer.isSoldOut = this.isSoldOut;
+        if (currentBeer.isOnSale) {
+          currentBeer.oldPrice = this.generatePrice();
+        }
+        this.tmpBeers = this.beers;
+      });
+      this.beers = this.beers.concat(data);
+    });
   }
 
   subscribeToSearch() {
@@ -108,5 +131,9 @@ export class ProductListComponent implements OnInit {
       this.isProductOfTheWeek = true;
       this.numberOfBadges++;
     }
+  }
+
+  onScrollDown() {
+    this.nextPage();
   }
 }

@@ -7,17 +7,7 @@ import { BeerService } from './service/beer.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
   title = 'beer-shop';
 
-  beers: Beer[] = []
-
-  constructor(private beerService: BeerService) {}
-
-
-  ngOnInit(): void {
-    this.beerService.getBeers().subscribe(data => {
-      this.beers = data
-    })
-  }
 }
