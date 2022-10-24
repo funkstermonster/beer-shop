@@ -32,7 +32,6 @@ export class WishlistService {
     let favBeers = localStorage.getItem("loved-beers");
     let favBeersParsed: Beer[] = [];
     if(favBeers) {
-      console.log(favBeers)
       favBeersParsed = JSON.parse(localStorage.getItem("loved-beers") || "[]");
     }
     return favBeersParsed;

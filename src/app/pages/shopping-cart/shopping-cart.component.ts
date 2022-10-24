@@ -29,7 +29,6 @@ export class ShoppingCartComponent implements OnInit {
   }
 
   reactToQuantityChange(isIncreased: boolean, beer: Beer) {
-    console.log(isIncreased)
     if (isIncreased) {
       this.addedBeers.push(beer)
       this.shoppingCartService.addBeerIntoCart(beer)
