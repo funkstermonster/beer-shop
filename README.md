@@ -1,4 +1,4 @@
-# BeerShop
+# BeerShop: https://funkstermonster.github.io/beer-shop/
 
 ## PLP:
 
