@@ -5,8 +5,8 @@
         <span class="product-of-the-week" *ngIf="beer.isProductOfTheWeek">Product of the week</span>
         <span class="new" *ngIf="beer.isNew">New</span>
         <span class="soldout" *ngIf="beer.isSoldOut">Sold Out</span>
-        <img src="../../../assets/icons/24x24/heart.svg" alt="heart icon" class="heart-icon" (click)="addBeer()">
-        <img src="../../../assets/icons/24x24/compare.svg" alt="compare icon" class="compare-icon">
+        <img src="assets/icons/24x24/heart.svg" alt="heart icon" class="heart-icon" (click)="addBeer()">
+        <img src="assets/icons/24x24/compare.svg" alt="compare icon" class="compare-icon">
     </div>
     <img
       src="{{beer.image_url}}"
