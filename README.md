@@ -7,6 +7,7 @@
 - if a product is sold out, then the add to cart CTA is disabled
 - heart icon: adds the product to the wishlist
 - filters are not implemented
+- alcohol range filter works
 
 ## PDP: 
 
