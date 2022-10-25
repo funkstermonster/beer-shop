@@ -63,11 +63,11 @@
     <div class="col-10">
       <span class="alcohol-range mt-2">Alcohol range</span>
       <div class="row mt-2">
-        <input type="text" placeholder="from (%)" class="from" />
-        <input type="text" placeholder="until (%)" class="until" />
+        <input type="text" [(ngModel)]="abvFrom" placeholder="from (%)" class="from" />
+        <input type="text" [(ngModel)]="abvUntil" placeholder="until (%)" class="until" />
       </div>
       <div class="row">
-        <app-text-button [text]="'Apply'" class="apply mt-2"></app-text-button>
+        <app-text-button [text]="'Apply'" (click)="apply()" class="apply mt-2"></app-text-button>
       </div>
       <div class="row">
         <app-secondary-button class="secondary mt-2"></app-secondary-button>

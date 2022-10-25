@@ -82,6 +82,23 @@ export class ProductListComponent implements OnInit {
     });
   }
 
+  receiveFilteredBeers(beers: Beer[]) {
+    beers.forEach((currentBeer) => {
+      currentBeer.price = this.generatePrice();
+      currentBeer.volume = this.generateVolumeNumber();
+      this.clearBadges();
+      this.generateBadges();
+      currentBeer.isNew = this.isNew;
+      currentBeer.isOnSale = this.isOnSale;
+      currentBeer.isProductOfTheWeek = this.isProductOfTheWeek;
+      currentBeer.isSoldOut = this.isSoldOut;
+      if (currentBeer.isOnSale) {
+        currentBeer.oldPrice = this.generatePrice();
+      }
+    });
+    this.beers = beers
+  }
+
   private generateBadges() {
     this.randomizeOnSale();
     this.randomizeSoldOut();
