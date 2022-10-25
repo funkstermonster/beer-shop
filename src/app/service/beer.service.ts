@@ -5,6 +5,7 @@ import { Beer } from '../model/beer';
 import { FilterObject } from '../model/filter-object';
 
 const API_URL: string = "https://api.punkapi.com/v2/beers?per_page=12&page=";
+const API_BEER_DETAILS_URL: string = "https://api.punkapi.com/v2/beers/"
 const API_FILTER_URL: string = "https://api.punkapi.com/v2/beers?";
 
 @Injectable({ providedIn: 'root' })
@@ -17,7 +18,7 @@ export class BeerService {
     }
 
     getBeerDetails(beerId: number): Observable<Beer[]> {
-        return this.http.get<Beer[]>(API_URL + beerId);
+        return this.http.get<Beer[]>(API_BEER_DETAILS_URL + beerId);
     }
 
     filterBeers(filterObject: FilterObject): Observable<Beer[]> {

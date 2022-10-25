@@ -25,7 +25,7 @@ export class ProductDetailsComponent implements OnInit {
     this.activatedRoute.params.subscribe(data => {
       this.beerId = data["id"]
       this.beerService.getBeerDetails(this.beerId).subscribe(data => {
-        this.beer = data
+        this.beer = data        
         this.beer[0].price = this.generatePrice()
         this.beer[0].oldPrice = this.generatePrice()
         this.beer[0].volume = this.generatePrice()
